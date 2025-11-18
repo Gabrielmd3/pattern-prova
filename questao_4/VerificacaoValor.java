@@ -5,7 +5,7 @@ public class VerificacaoValor extends VerificacaoAntifraude {
     @Override
     public void validar(Transacao t) {
         if (t.getValor() > 5000) {
-            System.out.println("FRAUDE DETECTADA: Valor muito alto (" + t.getValor() + "). Transação negada.");
+            System.out.println("FRAUDE DETECTADA: Valor muito alto (" + t.getValor() + "). Transação negada. Possivel tigrinho");
         } else {
             System.out.println("Valor OK. Verificando próxima etapa...");
             if (proximaVerificacao != null) {

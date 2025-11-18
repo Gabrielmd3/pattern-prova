@@ -11,11 +11,11 @@ public class SistemaPagamentos {
         v2_Geo.setProximaVerificacao(v3_Hist);
 
         System.out.println("--- Testando Transação 1 ---");
-        Transacao t1 = new Transacao(200.0, "BR", false);
+        Transacao t1 = new Transacao(500.0, "BR", false);
         v1_Valor.validar(t1);
 
         System.out.println("\n--- Testando Transação 2 ---");
-        Transacao t2 = new Transacao(200.0, "RU", false);
+        Transacao t2 = new Transacao(1000.0, "EUA", false);
         v1_Valor.validar(t2);
     }
 }

@@ -5,12 +5,12 @@ public class SistemaCorporativo {
     public static void main(String[] args) {
         Thread threadVendas = new Thread(() -> {
             Logger logVendas = Logger.getInstance();
-            logVendas.logEvento("Venda realizada: R$ 500,00");
+            logVendas.logEvento("Venda realizada tome!: R$ 100,00");
         });
 
         Thread threadEstoque = new Thread(() -> {
             Logger logEstoque = Logger.getInstance();
-            logEstoque.logErro("Falha ao atualizar estoque: Produto não encontrado");
+            logEstoque.logErro("Falha ao atualizar estoque: Produto não encontrado, muito beta");
         });
 
         Thread threadAuditoria = new Thread(() -> {
