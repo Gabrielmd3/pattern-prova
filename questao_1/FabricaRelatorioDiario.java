@@ -1,3 +1,4 @@
+//Factory Method
 public class FabricaRelatorioDiario implements iFabricaRelatorio {
     @Override
     public iRelatorio criarRelatorio() {

@@ -1,3 +1,4 @@
+//Factory Method
 public class RelatorioDiario implements iRelatorio {
     @Override
     public void gerar() {
